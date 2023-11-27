@@ -1,0 +1,102 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid red;
+}
+
+/* ----------- Header */
+.Header
+{
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    flex-wrap: wrap;
+}
+
+.Header__logo img
+{
+    vertical-align: middle;
+}
+
+.Header__logo a
+{
+    text-decoration: none;
+}
+
+.Header__nav__list
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Header__nav__list li, .Header__nav__list a
+{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ----------- main */
+    /* ----------- main__hero */
+.Main__hero
+{
+    background-color: rgb(122, 122, 122);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.Main__hero__left-side img
+{
+    padding: 32px 24px;
+    width: 100%;
+    height: auto;
+}
+
+.Main__hero__left-side
+{
+    width: 60%;
+}
+
+.Main__hero__right-side
+{
+    width: 40%;
+}
+
+    /* ----------- main__information */
+.Main__information
+{
+    display: flex;
+    background-color: aquamarine;
+    padding: 32px 0;
+}
+
+.Main__information__left-side
+{
+    padding: 0 24px;
+}
+
+.Main__information__right-side
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.Main__information__right-side__container
+{
+    display: flex;
+    
+    
+}
+
+.Main__information__right-side__container__info
+{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
