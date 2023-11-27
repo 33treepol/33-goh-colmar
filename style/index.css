@@ -7,6 +7,18 @@
     font-family: sans-serif
 }
 
+p.description
+{
+    color: rgb(130, 130, 130);
+
+}
+
+h2, h3
+{
+    color: rgb(64, 64, 64);
+
+}
+
 /* ----------- Header */
 .Header
 {
@@ -16,16 +28,37 @@
     align-items: center;
     background-color: rgb(255, 255, 255);
     flex-wrap: wrap;
+    padding: 0 24px;
 }
 
 .Header__logo img
 {
     vertical-align: middle;
+    width: auto;
+    height: 48px;
+    
 }
 
 .Header__logo a
 {
     text-decoration: none;
+    font-size: 0;
+}
+
+.Header__logo span
+{
+    font-size: 32px;
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+#colmar
+{
+    color: black;
+}
+#academy
+{
+    color: rgb(130, 130, 130);
 }
 
 .Header__nav__list
@@ -37,6 +70,13 @@
 {
     list-style: none;
     text-decoration: none;
+    color: rgb(130, 130, 130);
+
+}
+.Header__nav__list .menu
+{
+    padding-right: 16px;
+
 }
 
 /* ----------- main */
@@ -63,14 +103,40 @@
 .Main__hero__left-side
 {
     width: 60%;
-    /* flex: 0.6; */
 }
 
 .Main__hero__right-side
 {
     width: 40%;
-    padding-left: 12px;
-    /* flex: 0.4; */
+    padding: 0 12px;
+}
+
+.Main__hero__right-side h1
+{
+    color: rgb(64, 64, 64);
+    font-weight: 700;
+    font-size: 81px;
+    padding-bottom: 32px;
+}
+
+.Main__hero__right-side p
+{
+    color: rgb(94, 94, 94);
+    font-weight: 700;
+    font-size: 32px;
+    padding-right: 100px;
+    padding-bottom: 32px;
+
+}
+
+.Main__hero__right-side button
+{
+    background-color: rgb(76, 76, 76);
+    color: white;
+    padding: 8px 0;
+    font-size: 32px;
+    text-align: center;
+    width: 600px;
 }
 
     /* ----------- main__information */
@@ -92,6 +158,26 @@
     height: auto;
 }
 
+.Main__information__left-side h2
+{
+    padding: 32px 0 24px 0;
+    font-size: 56px;
+    font-weight: 700;
+
+}
+.Main__information__left-side p
+{
+    padding-right: 80px;
+    padding-bottom: 32px;
+}
+
+.Main__information__left-side #emanuel
+{
+    font-weight: 600;
+    color: rgb(130, 130, 130);
+
+}
+
 .Main__information__right-side
 {
     flex: 0.4;
@@ -102,7 +188,7 @@
 .Main__information__right-side__container
 {
     display: flex;
-    border-left: 1px solid black;
+    /* border-left: 1px solid rgb(201, 201, 201); */
 }
 
 .Main__information__right-side__container img
@@ -111,6 +197,13 @@
     /* width: 100%; */
     /* height: auto; */
     padding: 0 16px 16px 16px;
+
+}
+
+
+.Main__information__right-side__container:hover
+{
+    background-color: rgb(179, 179, 179);
 
 }
 
@@ -127,9 +220,26 @@
     text-align: left;
     background-color: transparent;
     border: none;
-    color: aqua;
+    color: rgb(0, 157, 255);
 }
 
+.Main__information__right-side__container h3
+{
+    font-size: 32px;
+}
+
+.Main__information__right-side__container p
+{
+    padding: 8px 0 16px 0;
+    font-size: 22px;
+    padding-right: 36px;
+}
+
+.Main__information__right-side__container button
+{
+    font-size: 16px;
+    
+}
 
     /* ----------- main__course */
 .Main_course
@@ -140,19 +250,23 @@
 .Main_course h2
 {
     text-align: center;
-    padding: 32px 0;
+    font-weight: 800;
+    font-size: 48px;
+    padding: 32px 0 ;
 }
 
 .Main_course__blog-container
 {
     display: flex;
     justify-content: center;
-    padding: 0px 72px;
+    align-items: center;
+    padding: 0px 72px 32px 72px;
     flex-wrap: wrap;
 }
 
 .Main_course__blog-container__post
 {
+    width: 31.33%;
     background-color: white;
     margin: 12px 16px;
 }
@@ -181,9 +295,13 @@
     background-color: rgb(255, 255, 255);
 }
 
+
+
 .Main_thesis h2
 {
     text-align: center;
+    font-weight: 800;
+    font-size: 48px;
     padding: 32px 0;
 }
 
@@ -198,15 +316,33 @@
     padding: 0 24px 24px 24px;
 
 }
+
 .Main_thesis__info-container__left video
 {
     width: 100%;
     height: auto;
 }
 
+.Main_thesis__info-container__left h3
+{
+    padding: 24px 0 8px 0;
+
+}
+
+.Main_thesis__info-container__left p
+{
+    padding-bottom: 32px;
+
+}
+
 .Main_thesis__info-container__right
 {
     width: 40%;
+}
+
+.Main_thesis__info-container__right__box__hover:hover
+{
+    background-color: rgb(179, 179, 179);
 }
 
 
@@ -218,6 +354,7 @@
 .Main_thesis__info-container__right__box__image
 {
     width: 35%;
+    height: auto;
     padding: 16px;
 }
 
@@ -229,14 +366,28 @@
     justify-content: center;
 }
 
+.Main_thesis__info-container__right__box_info h3
+{
+    font-size: 32px;
+    margin-right: 100px;
+}
+
+.Main_thesis__info-container__right__box_info p
+{
+    padding: 8px 0 16px 0;
+    font-size: 22px;
+    margin-right: 100px;
+}
+
 /* ----------- footer */
 .Footer
 {
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(179, 179, 179);
     padding-top: 16px;
     padding-bottom: 64px;
     padding-left: 24px;
     padding-right: 24px;
+
 
 }
 
@@ -249,4 +400,6 @@
 .Footer_container a
 {
     text-decoration: none;
+    color: rgb(130, 130, 130);
 }
+
